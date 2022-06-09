@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h3>Bookmarker</h3>
+      </div>
+    </header>
+    <div class="container">
+      <div class="sites text-center py-4">
+        <h3 class="py-4">Bookmark your favorite sites</h3>
+        <label for="name" class="fw-bold py-2">Site Name</label>
+        <input
+          id="bookmarkName"
+          type="text"
+          placeholder="Bookmark Name"
+          class="form-control w-75 m-auto"
+        />
+        <label for="name" class="fw-bold py-2">Site URL</label>
+        <input
+          id="bookmarkURL"
+          type="text"
+          placeholder="Website URL"
+          class="form-control w-75 m-auto"
+        />
+        <div id="buttonsContainer">
+          <button onclick="addBookmark()" class="btn btn-primary my-4">
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container my-4">
+      <input
+        type="text"
+        class="form-control w-75 m-auto"
+        placeholder="Search Bookmark"
+        aria-label="Bookmark Name"
+        aria-describedby="basic-addon2"
+        onkeyup="searchBookmark(this.value)"
+      />
+    </div>
+    <div class="container">
+      <div id="bookmarkList"></div>
+    </div>
+    <footer>
+      <div class="container">
+        <p>© 2022 Bookmarker Inc.</p>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/mine.js"></script>
+  </body>
+</html>
